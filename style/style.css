@@ -1,61 +1,123 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
 
 * {
-    margin: 0;
+    margin: 0 !important;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
 /* HEADER */
-.header {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+
+.navbar-custom {
     height: fit-content;
+    padding: 40px 40px !important;
+    background-color: #FFFFFF;
 }
 
-.header .navbar {
-    width: 100%;
+.container-fluid {
+    align-items: center;
+    gap: 10px;
 }
+
+.container-fluid img {
+    width: 100px;
+    
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.navbar-brand-custom {
+    font-size: 40px !important;
+}
+
+.navbar-colapse-custom {
+    justify-content: flex-end;
+
+}
+
+
+.nav-item a {
+    font-size: 30px;
+}
+
+.nav-item a:hover {
+    color: #E51B3E;
+    transition: .5s;
+}
+
 
 /* MAIN */
 .main {
     display: flex;
     width: 100%;
-    height: 100vh;
-    background-color: aquamarine;
+    height: fit-content;
 }
 
 /* Banner */
-.main .banner-conteiner {
+.main .banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100vh;
     background-image: url(../imgs/banner.jpeg);
     background-position: center;
     background-size: cover;
-    width: 100%;
-    height: 100vh;
+    background-attachment: fixed;
 }
 
-.banner-conteiner button {
+.banner button {
     width: 320px;
     height: 70px;
     background-color: #33bb690d;
     border: 1px solid #33BB69;
     border-radius: 12px;
+    font-size: 25px;
+}
+
+.banner button:hover {
+    transform: scale(1.5);
+    transition: 1s;
+    font-size: 30px;
+    
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 60px !important;
+}
+
+.banner-content h2 {
+    font-size: 90px;
+    font-weight: bold;
+    color: #E51B3E;
+}
+
+.banner-content p {
+    font-size: 40px;
 }
 
 /* Cards */
 
+.series {
+    padding: 40px;
+}
+
 .top-series {
-    font-size: 30px;
     display: flex;
     justify-content: center;
     padding: 20px;
-
+    font-size: 40px;
+    font-weight: bold;
 
 }
 
@@ -86,7 +148,6 @@
      */
     /* border: 1px solid #8b0000;
     border-radius: 12px; */
-   
 } 
 
 .card-series img {
@@ -127,14 +188,12 @@
 
 }
 
-
-
-
 .footer {
     display: flex;
     align-items: center;
     flex-direction: column;
     background-color: #171717;
+    padding: 20px;
 }
 
 .footer .footer-conteiner {
@@ -167,8 +226,39 @@
 }
 
 @media (max-width:	425px) {
+    .navbar-custom {
+        padding: 20px 20px !important;
+    }
+
     .footer .footer-conteiner {
         flex-direction: column;
         gap: 10px;
     }
+
+    .container-fluid {
+        padding: 0 !important;
+        
+    }
+    .container-fluid img {
+        width: 60px;
+        
+    }
+
+    .navbar-logo a {
+        font-size: 30px !important;
+    }
+
+    .banner-content h2 {
+        font-size: 45px;
+    }
+    
+    .banner-content p {
+        font-size: 20px;
+    }
+
+    .banner button {
+        width: 220px;
+        font-size: 20px;
+    }
+    
 }
