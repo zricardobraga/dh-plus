@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
 
 * {
+<<<<<<< HEAD
     margin: 0 !important;
+=======
+    margin: 0;
+>>>>>>> 4fea773b487b5ab369d8c827ddb159ce4e83ddbd
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
@@ -56,15 +60,25 @@
 .main {
     display: flex;
     width: 100%;
+<<<<<<< HEAD
     height: fit-content;
 }
 
 /* Banner */
 .main .banner {
+=======
+    height: 100vh;
+    background-color: aquamarine;
+}
+
+/* Banner */
+.main .banner-conteiner {
+>>>>>>> 4fea773b487b5ab369d8c827ddb159ce4e83ddbd
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     width: 100%;
     height: 100vh;
     background-image: url(../imgs/banner.jpeg);
@@ -74,11 +88,22 @@
 }
 
 .banner button {
+=======
+    background-image: url(../imgs/banner.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.banner-conteiner button {
+>>>>>>> 4fea773b487b5ab369d8c827ddb159ce4e83ddbd
     width: 320px;
     height: 70px;
     background-color: #33bb690d;
     border: 1px solid #33BB69;
     border-radius: 12px;
+<<<<<<< HEAD
     font-size: 25px;
 }
 
@@ -187,13 +212,20 @@
     font-size: 12px;
 
 }
+=======
+}
+
+>>>>>>> 4fea773b487b5ab369d8c827ddb159ce4e83ddbd
 
 .footer {
     display: flex;
     align-items: center;
     flex-direction: column;
     background-color: #171717;
+<<<<<<< HEAD
     padding: 20px;
+=======
+>>>>>>> 4fea773b487b5ab369d8c827ddb159ce4e83ddbd
 }
 
 .footer .footer-conteiner {
@@ -226,14 +258,18 @@
 }
 
 @media (max-width:	425px) {
+<<<<<<< HEAD
     .navbar-custom {
         padding: 20px 20px !important;
     }
 
+=======
+>>>>>>> 4fea773b487b5ab369d8c827ddb159ce4e83ddbd
     .footer .footer-conteiner {
         flex-direction: column;
         gap: 10px;
     }
+<<<<<<< HEAD
 
     .container-fluid {
         padding: 0 !important;
@@ -261,4 +297,6 @@
         font-size: 20px;
     }
     
+=======
+>>>>>>> 4fea773b487b5ab369d8c827ddb159ce4e83ddbd
 }
