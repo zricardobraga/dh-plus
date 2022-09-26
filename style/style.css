@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
 
 * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
@@ -9,97 +8,235 @@
 
 /* HEADER */
 .header {
-    display: flex;
-    justify-content: center;
+    position: fixed;
     width: 100%;
-    height: fit-content;
+    z-index: 1;
 }
 
-.header .navbar {
-    width: 100%;
+.navbar-custom {
+    height: fit-content;
+    padding: 0px 40px !important;
+    background-color: #FFFFFF;
+}
+
+.container-fluid {
+    align-items: center;
+    gap: 10px;
+}
+
+.container-fluid img {
+    width: 100px;
+    
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.navbar-brand-custom {
+    font-size: 40px !important;
+}
+
+.navbar-colapse-custom {
+    justify-content: flex-end;
+
+}
+
+.nav-item a {
+    font-size: 30px;
+}
+
+.nav-item a:hover {
+    color: #E51B3E;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.modal-custom {
+    z-index: 1;
+}
+
+.modal-header-custom {
+    border: none !important;
+}
+
+.modal-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.modal-img {
+    width: 80px;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 30px;
+}
+
+.form-content div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-content input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 0.1px solid #DCDCDC;
+}
+
+.form-content input:hover {
+    border: 0.1px solid #33BB69;
+    transition: .5s;
+}
+
+.modal-footer-custom {
+    justify-content: center !important;
+    border: 0 !important;
+    margin-bottom: 20px;
+}
+
+.modal-footer-custom button {
+    width: 400px;
+    height: 50px;
+    background-color: #33BB69;
+    border: none;
+}
+
+.modal-footer-custom button:hover {
+    color: #171717 !important;
+    background-color: #FFF000 !important;
+    transition: .5s;
 }
 
 /* MAIN */
 .main {
     display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 100vh;
-    background-color: aquamarine;
+    height: fit-content;
 }
 
 /* Banner */
-.main .banner-conteiner {
+.main .banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100vh;
     background-image: url(../imgs/banner.jpeg);
     background-position: center;
     background-size: cover;
-    width: 100%;
-    height: 100vh;
+    background-attachment: fixed;
 }
 
-.banner-conteiner button {
+.banner button {
     width: 320px;
     height: 70px;
     background-color: #33bb690d;
     border: 1px solid #33BB69;
     border-radius: 12px;
+    font-size: 25px;
+}
+
+.banner button:hover {
+    transform: scale(1.5);
+    transition: 1s;
+    font-size: 30px;
+    
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 60px !important;
+}
+
+.banner-content h2 {
+    font-size: 90px;
+    font-weight: bold;
+    color: #E51B3E;
+}
+
+.banner-content p {
+    font-size: 40px;
 }
 
 /* Cards */
 
 .top-series {
-    font-size: 30px;
-    display: flex;
     justify-content: center;
-    padding: 20px;
-
+    padding: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    width: 100%;
 
 }
 
 .card-series {
-
     display: flex;
     justify-content:center;    
     flex-wrap: wrap;
-    min-height: 50vh;
-    padding: 20px 100px;
+    padding: 60px;
     text-align: center;
-    gap: 120px;
-    /* background-color: #483b08; */
-    /* border: 2px solid red; */
+    height: fit-content;
+    gap: 60px;
+    border-bottom: 10px;
+    transition: all 2.5s;
 
 }
 
-.card-series div {
+.card-series:hover {
+    background-color: #171717;
+    transition: all 3.5s;
+    border-bottom: solid #DCDCDC;
+    color:#FFFFFF;    
+
+}
+
+.card-series .cards {
     border-radius: 10px;
     background-color: black;
+    transition: all 1.5s; 
+    height: 98%;
+    width: 95%;
+    border: rgb(237, 187, 5) 1px solid;
+    
+
     
 }
 
-.card-series div:hover {
+.card-series .cards:hover {
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 5px 60px 10px rgb(237, 187, 5);  
+    transition: all 1.5s;
 
-    /* width: 50vh;
-    height: 58vh;
-     */
-    /* border: 1px solid #8b0000;
-    border-radius: 12px; */
-   
 } 
 
 .card-series img {
-    border-radius: 10px 10px 0 0;
-    height: 170px;
-
+    border-radius: 10px 10px 0 0;  
+    
 }
 
-.card-series h5 {
+.card-series .card-title-1 { 
     color: #b2b2b2;
-    padding: 10px;
+    padding: 15px 30px 7px;
+}
 
-
+.card-series .card-title {
+    color: #b2b2b2;
+    padding: 15px;
 }
 
 .card-series p {
@@ -113,8 +250,6 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-
-
 }
 
 .card-series a {
@@ -122,12 +257,18 @@
     color: #171717;
     font-weight: 700;
     border: #FFFFFF solid 2px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     font-size: 12px;
-
+    transition: all 1.0s;
 }
 
-
+.card-series a:hover {
+    background-color: #171717 !important;
+    border: 2px solid rgb(237, 187, 5) !important;
+    padding: 8px 16px;
+    font-size: 15px;
+    transition: all .5s;
+}
 
 
 .footer {
@@ -135,6 +276,7 @@
     align-items: center;
     flex-direction: column;
     background-color: #171717;
+    padding: 20px;
 }
 
 .footer .footer-conteiner {
@@ -167,8 +309,54 @@
 }
 
 @media (max-width:	425px) {
+    .navbar-custom {
+        padding: 20px 20px !important;
+    }
+
     .footer .footer-conteiner {
         flex-direction: column;
         gap: 10px;
     }
+
+    .container-fluid {
+        padding: 0 !important;
+        
+    }
+    .container-fluid img {
+        width: 60px;
+        
+    }
+
+    .navbar-logo a {
+        font-size: 20px !important;
+    }
+
+    /* .navbar-colapse-custom .navbar-nav-custom .nav-item a {
+        font: 15px !important;
+
+    } */
+
+    .banner-content h2 {
+        font-size: 45px;
+    }
+    
+    .banner-content p {
+        font-size: 20px;
+    }
+
+    .banner button {
+        width: 220px;
+        font-size: 20px;
+    }
+
+    .series {
+        height: fit-content;
+    }
+
+    .card-series {
+        height: fit-content;
+    }
+        
+    
+        
 }
