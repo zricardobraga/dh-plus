@@ -52,6 +52,10 @@
 .nav-item a:hover {
     color: #E51B3E;
     transition: .5s;
+<<<<<<< HEAD
+=======
+    cursor: pointer;
+>>>>>>> 96bad5029ad4fb53d78ed3aee8e864006ceb5a59
 }
 
 .modal-custom {
@@ -179,55 +183,58 @@
 }
 
 .top-series {
-    display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
     font-size: 40px;
     font-weight: bold;
-
+    width: 100%;
 }
 
 .card-series {
-
     display: flex;
     justify-content:center;    
     flex-wrap: wrap;
-    width: 100%;
-    height: fit-content;
+    padding: 60px;
     text-align: center;
-    gap: 50px;
+    height: fit-content;
+    gap: 60px;
+    border-bottom: 10px;
+    transition: all 2.5s;
 }
 
-.card-custom {
-    width: 300px;
+.card-series:hover {
+    background-color: #171717;
+    transition: all 3.5s;
+    border-bottom: solid #DCDCDC;
+    color:#FFFFFF;    
 }
 
-.card-series div {
+.card-series .cards {
     border-radius: 10px;
     background-color: black;
+    transition: all 1.5s;     
+    border: rgb(237, 187, 5) 1px solid; 
     
 }
 
-.card-series div:hover {
-
-    /* width: 50vh;
-    height: 58vh;
-     */
-    /* border: 1px solid #8b0000;
-    border-radius: 12px; */
+.card-series .cards:hover {    
+    box-shadow: 0 5px 60px 10px rgb(237, 187, 5);  
+    transition: all 1.5s;
+    transform: scale(1.2);
 } 
 
 .card-series img {
-    border-radius: 10px 10px 0 0;
-    height: 170px;
-
+    border-radius: 10px 10px 0 0;     
 }
 
-.card-series h5 {
+.card-series .card-title-1 { 
     color: #b2b2b2;
-    padding: 10px;
+    padding: 15px 30px 7px;
+}
 
-
+.card-series .card-title {
+    color: #b2b2b2;
+    padding: 15px;
 }
 
 .card-series p {
@@ -241,8 +248,6 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-
-
 }
 
 .card-series a {
@@ -250,10 +255,18 @@
     color: #171717;
     font-weight: 700;
     border: #FFFFFF solid 2px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     font-size: 12px;
-
+    transition: all 1.0s;
 }
+
+.card-series a:hover {
+    background-color: #171717 !important;
+    border: 2px solid rgb(237, 187, 5) !important;
+    transform: scale(1.2);
+    transition: all .5s;
+}
+
 
 .footer {
     display: flex;
