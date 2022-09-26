@@ -193,7 +193,6 @@
     gap: 60px;
     border-bottom: 10px;
     transition: all 2.5s;
-
 }
 
 .card-series:hover {
@@ -201,32 +200,24 @@
     transition: all 3.5s;
     border-bottom: solid #DCDCDC;
     color:#FFFFFF;    
-
 }
 
 .card-series .cards {
     border-radius: 10px;
     background-color: black;
-    transition: all 1.5s; 
-    height: 98%;
-    width: 95%;
-    border: rgb(237, 187, 5) 1px solid;
-    
-
+    transition: all 1.5s;     
+    border: rgb(237, 187, 5) 1px solid; 
     
 }
 
-.card-series .cards:hover {
-    height: 100%;
-    width: 100%;
+.card-series .cards:hover {    
     box-shadow: 0 5px 60px 10px rgb(237, 187, 5);  
     transition: all 1.5s;
-
+    transform: scale(1.2);
 } 
 
 .card-series img {
-    border-radius: 10px 10px 0 0;  
-    
+    border-radius: 10px 10px 0 0;     
 }
 
 .card-series .card-title-1 { 
@@ -265,8 +256,7 @@
 .card-series a:hover {
     background-color: #171717 !important;
     border: 2px solid rgb(237, 187, 5) !important;
-    padding: 8px 16px;
-    font-size: 15px;
+    transform: scale(1.2);
     transition: all .5s;
 }
 
