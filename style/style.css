@@ -52,10 +52,7 @@
 .nav-item a:hover {
     color: #E51B3E;
     transition: .5s;
-<<<<<<< HEAD
-=======
     cursor: pointer;
->>>>>>> 96bad5029ad4fb53d78ed3aee8e864006ceb5a59
 }
 
 .modal-custom {
