@@ -177,14 +177,17 @@
 .series {
     padding: 40px;
     height: fit-content;
+    background-color: #FFFFFF;
 }
 
 .top-series {
     justify-content: center;
+    width: 100%;
     padding: 10px;
+    margin-top: 20px;
     font-size: 40px;
     font-weight: bold;
-    width: 100%;
+
 }
 
 .card-series {
@@ -307,11 +310,6 @@
         padding: 20px 20px !important;
     }
 
-    .footer .footer-conteiner {
-        flex-direction: column;
-        gap: 10px;
-    }
-
     .container-fluid {
         padding: 0 !important;
         
@@ -325,10 +323,11 @@
         font-size: 20px !important;
     }
 
-    /* .navbar-colapse-custom .navbar-nav-custom .nav-item a {
-        font: 15px !important;
-
-    } */
+    .navbar-colapse-custom {
+        display: flex;
+        justify-content: center;
+    
+    }
 
     .banner-content h2 {
         font-size: 45px;
@@ -351,6 +350,10 @@
         height: fit-content;
     }
         
-    
+    .footer .footer-conteiner {
+        flex-direction: column;
+        gap: 10px;
+    }
+
         
 }
