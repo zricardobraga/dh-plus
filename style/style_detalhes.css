@@ -230,6 +230,19 @@ section.trailer {
 
 }
 
+.footer-content img:hover {
+    transform: scale(1.4);
+    transition: .5s;
+    padding: 0 10px;
+
+}
+
+.footer-content a {
+    text-decoration: none;
+}
+
+
+
 @media (max-width:	425px) {
     .navbar-custom {
         padding: 20px 20px !important;
