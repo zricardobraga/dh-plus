@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER */
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar-custom {
+    height: fit-content;
+    padding: 0px 40px !important;
+    background-color: #FFFFFF;
+}
+
+.container-fluid {
+    align-items: center;
+    gap: 10px;
+}
+
+.container-fluid img {
+    width: 100px;
+    
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.navbar-brand-custom {
+    font-size: 40px !important;
+}
+
+.navbar-colapse-custom {
+    justify-content: flex-end;
+
+}
+
+.nav-item a {
+    font-size: 30px;
+}
+
+.nav-item a:hover {
+    color: #E51B3E;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.modal-custom {
+    z-index: 1;
+}
+
+.modal-header-custom {
+    border: none !important;
+}
+
+.modal-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.modal-img {
+    width: 80px;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 30px;
+}
+
+.form-content div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-content input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 0.1px solid #DCDCDC;
+}
+
+.form-content input:hover {
+    border: 0.1px solid #33BB69;
+    transition: .5s;
+}
+
+.modal-footer-custom {
+    justify-content: center !important;
+    border: 0 !important;
+    margin-bottom: 20px;
+}
+
+.modal-footer-custom button {
+    width: 400px;
+    height: 50px;
+    background-color: #33BB69;
+    border: none;
+}
+
+.modal-footer-custom button:hover {
+    color: #171717 !important;
+    background-color: #FFF000 !important;
+    transition: .5s;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+  }
+
+.banner img {
+    width: 100%;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nome-serie {
+    margin-left: 122px;
+    margin-top: 32px;
+    margin-bottom: 0;
+    
+}
+
+.stars {
+    width: 160px;
+    height: 50px;
+    margin-left: 122px;
+    transition: 0.8s;
+}
+
+.stars:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.detail p{
+    margin: 0px 122px;
+    text-align: justify;
+}
+
+.criador-serie {
+    margin-left: 122px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+section.trailer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-style: normal;
+    font-size: 20px;
+    gap: 40px;
+    margin: 70px 0px;
+    max-width: 100%;
+    width: 80%;
+    transition: 0.6s;
+  }
+
+  .trailer h2 {
+    transition: 1s;
+  }
+
+.trailer h2:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.trailer iframe{
+    
+    display: block;
+    max-width: 1200 px;
+    width: 100%;
+    height: 500px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #171717;
+}
+
+.footer .footer-conteiner {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.footer-conteiner .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+.footer-content h3 {
+    color: #FFFFFF;
+}
+
+.footer-content p {
+    color: #ffffff80;
+}
+
+.footer .footer-content-text {
+    color: #ffffff80;
+    margin-top: 20px;
+
+}
+
+@media (max-width:	425px) {
+    .navbar-custom {
+        padding: 20px 20px !important;
+    }
+
+    .footer .footer-conteiner {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container-fluid {
+        padding: 0 !important;
+        
+    }
+    .container-fluid img {
+        width: 60px;
+        
+    }
+
+    .navbar-logo a {
+        font-size: 20px !important;
+    }
+
+    /* .navbar-colapse-custom .navbar-nav-custom .nav-item a {
+        font: 15px !important;
+
+    } */
+
+    .navbar-colapse-custom {
+        display: flex;
+        justify-content: center !important;
+    
+    }
+
+    .banner-content h2 {
+        font-size: 45px;
+    }
+    
+    .banner-content p {
+        font-size: 20px;
+    }
+
+    .banner button {
+        width: 220px;
+        font-size: 20px;
+    }
+
+    .series {
+        height: fit-content;
+    }
+
+    .card-series {
+        height: fit-content;
+    }
+        
+    
+        
+}
